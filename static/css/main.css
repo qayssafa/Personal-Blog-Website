@@ -1,0 +1,41 @@
+@import url("header.css");
+@import url("content.css");
+@import url("footer.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    background-color: #dfe5e7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
+    grid-gap: 1rem;
+    overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-rows: auto 1fr auto;
+        grid-gap: 0.5rem;
+    }
+}

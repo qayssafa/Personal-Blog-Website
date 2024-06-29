@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/blog-post.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+        <h1 class="nav-title">Personal Blog Website</h1>
+        <nav class="nav">
+            <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+            <ul class="nav-list">
+                <li><a href="..\index.html">Home</a></li>
+                <li><a href="blog-post.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="blog-post-content">
+        <header class="post-header">
+            <h2>Lorem Ipsum</h2>
+            <p>Posted on <time datetime="2024-05-27">May 27, 2024</time></p>
+        </header>
+        <section class="author-info">
+
+            <img src="images\user-profile-image.png" alt="Author Avatar" class="author-avatar" width="100" height="100">
+
+            <div class="author-details">
+                <h3>John Doe</h3>
+                <p>Software Engineer at Tech Company</p>
+                <p>John is a passionate developer with over 10 years of experience in the tech industry.</p>
+            </div>
+        </section>
+        <section class="post-text">
+            <blockquote>
+                <p>
+                    <b>Lorem ipsum dolor sit amet</b>, <em>consectetur adipiscing elit</em>. <u>Sed sem nibh</u>, ultricies quis vehicula vitae,
+                    rhoncus et diam. <b>Aenean ultrices elit ac lectus ultrices</b>, a convallis ex malesuada. <em>Sed maximus lacus et
+                    volutpat dapibus</em>. Quisque aliquam sollicitudin efficitur. <u>Fusce pretium dapibus odio ut elementum</u>.
+                    <b>Aliquam erat volutpat</b>. <em>Praesent venenatis, tortor vel condimentum congue</em>, magna tortor tincidunt mauris,
+                    vel blandit turpis odio vel lacus. Curabitur at dictum tellus. <b>Mauris eget ex in purus placerat
+                    lobortis</b>. Sed lectus elit, suscipit quis feugiat ut, <em>pharetra id nunc</em>. <u>Sed id sem ligula</u>. Praesent et
+                    lacinia sapien. <b>In aliquam leo ex</b>, sit amet interdum diam laoreet id.
+                </p>
+            </blockquote>
+            <blockquote>
+                <p>
+                    <b>Donec a dictum neque</b>, <em>ut maximus magna</em>. <u>Aenean ullamcorper ex sed commodo scelerisque</u>. Duis et purus nec
+                    odio dictum euismod. <b>Maecenas sit amet pellentesque neque</b>, in gravida nisl. <em>Aliquam luctus feugiat odio
+                    at semper</em>. Nullam rutrum auctor vulputate. <u>Nullam et lacus mauris</u>. Etiam eu vulputate ipsum, at
+                    fermentum libero. <b>Nulla gravida, eros sed scelerisque suscipit</b>, mi mauris posuere neque, nec suscipit
+                    erat ex a purus. <em>Proin quis viverra tellus</em>. Proin commodo diam orci, vel tincidunt urna elementum nec.
+                    <u>In hac habitasse platea dictumst</u>. Praesent at mauris enim. <b>Suspendisse eget fringilla dui</b>, sit amet
+                    ornare neque. Vestibulum gravida aliquet justo, <em>aliquet facilisis augue rutrum ac</em>. <u>Pellentesque et
+                    consectetur mi</u>, sit amet finibus metus.
+                </p>
+            </blockquote>
+            
+        </section>
+        <figure>
+            <img src="images\blog-post.jpg" alt="Post Image" class="post-image">
+            <figcaption class="post-image-caption">Lorem Ipsum</figcaption>
+        </figure>
+
+        <section class="social-sharing">
+            <a href="https://twitter.com/share" class="twitter" target="_blank">
+                <i class="fab fa-twitter"></i>Share on Twitter
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php" class="facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i>Share on Facebook
+            </a>
+            <a href="https://www.linkedin.com/shareArticle" class="linkedin" target="_blank">
+                <i class="fab fa-linkedin-in"></i>Share on LinkedIn
+            </a>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <div class="contact-form">
+            <h2 class="footer-header">Let me know what's on your mind !
+            </h2>
+            <form>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="first-name">First Name</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="last-name">Last Name</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-field">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+                <div class="form-field">
+                    <label for="message">Leave a Message</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="submit-btn" type="submit">Submit</button>
+            </form>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
